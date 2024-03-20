@@ -47,6 +47,7 @@ flex-direction:row;
 line-height:50px;
 margin:3px;
 border-radius:5px;
+cursor: pointer;
 }
 #h{
 background-color:rgba(0,0,250,0.1);
@@ -69,10 +70,12 @@ padding-top:100px;
 }
 .option{
 width:400px;
-height:75px;
+height:fit-content;
 margin :auto;
 display:flex;
 justify-content:space-between;
+position: relative;
+padding-bottom: 10px;
 }
 .option > button{
 background-color:white;
@@ -80,6 +83,20 @@ color:black;
 font-size:25px;
 outline:0;
 border:0;
+transition: 0.5s;
+}
+#people{
+    color: grey;
+}
+#line{
+    width: 80px;
+    height: 5px;
+    border-radius: 100px;
+    position: absolute;
+    bottom:0;
+    background-color: blue;
+    transform: translateX(0px);
+    transition: 0.5s;
 }
 .upload{
 width:400px;
@@ -135,15 +152,23 @@ padding:10px;
 }
 .people > h2{
 font-weight:500;
-padding:10px 0px;
+padding:5px 0px;
 margin:0px;
-text-align:center;
+text-align:left;
+}
+.people > h3{
+    color:black;
+    font-size: 18px;
+    text-align: left;
+}
+.people > h3 > b{
+    color:red;
 }
 .good,.bad{
 width:calc(100% - 50px);
 background-color:rgba(0,255,0,0.3);
 margin:5px auto;
-padding:5px;
+padding:5px 25px;
 border-radius:10px;
 display:flex;
 flex-direction:row;
@@ -156,4 +181,36 @@ background-color:rgba(255,0,0,0.3);
 width:40px;
 height:fit-content;
 margin:auto 0px;
+}
+.about{
+width:400px;
+height:fit-content;
+background-color:white;
+margin :0px auto;
+display:flex;
+flex-direction:column;
+box-sizing:border-box;
+padding:10px;
+}
+.about > h1{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px 0px;
+    margin: 0;
+}
+.about > p{
+    margin:0px;
+    margin-top: 10px;
+}
+.about > p > b{
+    color:blue;
+}
+.about > h2{
+    font-size: 25px;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.about > h3{
+    color: blue;
+    margin: 0;
 }
