@@ -3,7 +3,7 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,14 +21,32 @@
 </nav>
 
 <div class="container">
-<div class="upload">
+<span class="option">
+<button id="img">Image</button>
+<button id="people">People</button>
+</span>
+<div class="upload" style="display:none;">
 <input type="file" id="image" accept="image/*" hidden>
 <label for="image">Upload Image</label>
-<div class="preview" id="prev" style="display:none;">
+<div class="preview" id="prev" style="display:block;">
 <img src=""/>
 <input type="submit" id="subm"/>
 </div>
 </div>
+<div class="people">
+<h2>Analysis Report</h2>
+<span class="list">
+<div class="good">
+<p>Nmae</p>
+<img src="images/good.jpg"/>
+</div>
+<div class="bad">
+<p>Nmae</p>
+<img src="images/bad.jpg"/>
+</div>
+</span>
+</div>
+
 </div>
 </body>
 
